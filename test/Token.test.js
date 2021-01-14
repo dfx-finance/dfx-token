@@ -83,7 +83,7 @@ describe("token", function () {
   });
 
   beforeEach(async function () {
-    token = await Token.connect(owner).deploy({ gasLimit: 8000000 });
+    token = await Token.connect(owner).deploy(owner.address, { gasLimit: 8000000 });
   });
 
   describe("initial setup", async function () {
